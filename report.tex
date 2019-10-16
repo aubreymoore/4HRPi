@@ -1,0 +1,80 @@
+\documentclass[12pt,letterpaper,english,bibliography=totocnumbered]{scrartcl}
+
+\usepackage{indentfirst}
+\usepackage{appendix}
+%\usepackage{fullpage}
+%\usepackage{subfiles}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{color}
+\usepackage{babel}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+%\usepackage{pdfpages}
+%\usepackage{comment}
+
+\usepackage[backend=biber,maxbibnames=99]{biblatex}
+\usepackage{csquotes}
+\addbibresource{references.bib}
+
+% Prevent page breaks within paragraphs
+% https://tex.stackexchange.com/questions/21983/how-to-avoid-page-breaks-inside-paragraphs
+\widowpenalties 1 10000
+
+\begin{document}
+
+\titlehead{Report on Use of UOG-CNAS-EO Core Funds for FY2018}
+\title{Development of a Raspberry Pi Workshop for 4H Students}
+\author{Aubrey Moore}
+\maketitle
+
+\begin{center}
+\includegraphics[width=0.7\linewidth]{UOG-4H-RPi.png}
+\end{center}
+
+
+% The following line provides a link to the source code for this document
+
+\begin{center}
+\url{CHANGEhttps://github.com/aubreymoore/FB18-Report-2/raw/master/report.pdf}
+\end{center}
+
+\newpage
+\tableofcontents{}
+
+\newpage
+\section{Background}
+
+\section{Staffing}
+
+\section{Outcomes}
+
+\cite{moore_open_2018}
+
+\section{Acknowledgments}
+
+\newpage
+\printbibliography
+
+\newpage
+\appendix
+\appendixpage
+\addappheadtotoc
+
+%\section{Recent Bioassay Results}\label{recent-bioassay-results}
+%
+%
+%
+%\fullcite{grasela_progress_2019}
+%
+%\section{Coconut Rhinoceros Beetle Bibliography}\label{crb-bibliography}
+%
+%\fullcite{moore_coconut_2019}
+
+\end{document}
